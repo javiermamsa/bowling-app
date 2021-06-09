@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-sm-3">
+        <button 
+            class="btn btn-primary btn-lg"
+            (click)="onRollingTheBall()"
+            [disabled]="isGameOver"
+        >{{ isGameOver ? 'The game is over' : 'Roll theball' }}
+        </button>
+    </div>
+    <div class="col-sm-6">
+        <p class="fs-2 mb-0" *ngIf="currentPoint">You knock down {{currentPoint}} pins</p>
+    </div>
+</div>

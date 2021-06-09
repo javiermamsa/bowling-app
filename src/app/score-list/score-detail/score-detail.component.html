@@ -1,0 +1,8 @@
+<div class="border border-dark" style="min-width: 80px;">
+    <div class="d-flex flex-row">
+        <div *ngFor="let score of currentScore" class="p-3">{{score}}</div>
+    </div>
+    <p class="text-center pb-3">{{total}}</p>
+</div>
+<p class="text-center" *ngIf="hasStrike">Strike!</p>
+<p class="text-center" *ngIf="hasSpare">Spare!</p>

@@ -1,0 +1,4 @@
+<h5 class="fs-3 mb-4" *ngIf="scores.length">Your Score:</h5>
+<div class="d-flex flex-row mb-3">
+    <app-score-detail *ngFor="let score of scores; index as id" [id]="id"></app-score-detail>
+</div>
